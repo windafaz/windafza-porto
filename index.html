@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Wind</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="container nav-wrap">
+    <div class="logo">Portofolio</div>
+    <div class="nav-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-wrap">
+    <div>
+      <h1>Hi I'm <span>Winda Fuzi Azahra</span></h1>
+      <p>
+        Saya adalah mahasiswa Informatika yang memiliki minat dalam pengembangan website dan perancangan alur antarmuka menggunakan Figma.
+        Saya telah memiliki pengalaman terlibat dalam sebuah proyek, sehingga terbiasa bekerja secara terstruktur, kreatif, dan berorientasi pada solusi.
+      </p>
+      <a href="#projects" class="btn">Lihat Project</a>
+    </div>
+
+    <!-- FOTO BULAT -->
+    <div class="hero-img">
+      <img src="Gambar1.jpeg" alt="Foto Wind">
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container card-section">
+    <h2>About Me</h2>
+    <p>
+      Saya adalah Mahasiswa Informatika yang memiliki ketertarikan pada pengembangan website serta perancangan alur dan tampilan aplikasi menggunakan Figma.
+      Saya senang mengubah ide menjadi solusi digital yang fungsional, terstruktur, dan mudah digunakan oleh pengguna. Melalui pengalaman terlibat dalam sebuah proyek,
+      saya belajar memahami kebutuhan pengguna, bekerja secara sistematis, serta mengembangkan desain dan website yang sederhana, modern, dan responsif.
+      Saat ini, saya terus meningkatkan kemampuan di bidang web development dan perancangan alur untuk menciptakan karya yang lebih baik dan bermanfaat.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="container card-section">
+    <h2>Skills</h2>
+
+    <div class="skills">
+      <div class="skill">
+        <h3>HTML</h3>
+        <p>Membuat struktur halaman web yang semantik dan rapi.</p>
+      </div>
+
+      <div class="skill">
+        <h3>CSS</h3>
+        <p>Mendesain tampilan website responsif, clean, dan konsisten.</p>
+      </div>
+
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <p>Menambahkan interaksi dinamis seperti modal dan animasi.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Figma</h3>
+        <p>Mendesain UI/UX modern sebelum diimplementasikan ke kode.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Responsive Design</h3>
+        <p>Menjaga tampilan tetap optimal di semua perangkat.</p>
+      </div>
+
+      <div class="skill">
+        <h3>Microsoft Office</h3>
+      <p>Mampu menggunakan Microsoft Word, Excel, dan PowerPoint untuk pembuatan dokumen, pengolahan data, serta presentasi yang rapi dan terstruktur.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container card-section">
+    <h2>Projects</h2>
+
+    <div class="projects">
+      <div class="project" onclick="openModal(
+        'Mawar Indah – Integrasi Katalog Tanaman & Edukasi AI',
+        'Sebuah website yang menghadirkan keindahan tanaman hias melalui katalog digital yang terstruktur serta dukungan asisten AI sebagai panduan perawatan. Proyek ini berfokus pada pengalaman pengguna yang nyaman, desain antarmuka yang bersih, serta akses informasi tanaman yang mudah dipahami.')">
+        <img src="Gambar4WebMawarIndah.png">
+        <div>
+          <h3>Mawar Indah – Integrasi Katalog Tanaman & Edukasi AI</h3>
+          <p>Klik untuk detail project</p>
+        </div>
+      </div>
+
+      <div class="project" onclick="openModal(
+        'SmartSkin Planner',
+        'Aplikasi berbasis web yang membantu pengguna mengatur rutinitas skincare secara terjadwal berdasarkan penggunaan bahan aktif. Dilengkapi fitur perencanaan rutin, dashboard pemantauan, serta pustaka informasi skincare untuk mendukung perawatan kulit yang lebih terarah, aman, dan konsisten.')">
+        <img src="Gambar2WebSkincare.png">
+        <div>
+          <h3>SmartSkin Planner</h3>
+          <p>Klik untuk detail project</p>
+        </div>
+      </div>
+
+      <div class="project" onclick="openModal(
+        'Simulasi Manajemen Memori Virtual',
+        'Aplikasi web interaktif yang memvisualisasikan cara kerja algoritma page replacement dalam sistem operasi, meliputi FIFO, LRU, dan Optimal. Dirancang untuk membantu pengguna memahami konsep manajemen memori virtual melalui simulasi, perbandingan algoritma, serta tampilan yang informatif dan mudah dipahami.')">
+        <img src="Gambar3WebSimulasi.png">
+        <div>
+          <h3>Simulasi Manajemen Memori Virtual</h3>
+          <p>Klik untuk detail project</p>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<div class="container card-section">
+<h2>Contact</h2>
+
+
+<form class="contact-form">
+<label>Full Name</label>
+<input type="text" placeholder="Input Name..." />
+
+
+<label>Email</label>
+<input type="email" placeholder="Input Email..." />
+
+
+<label>Message</label>
+<textarea placeholder="Message..."></textarea>
+
+
+<button type="submit">Send</button>
+</form>
+</div>
+</section>
+
+<!-- Footer Social Icons -->
+<footer class="footer">
+  <div class="social-icons">
+    <a href="https://github.com/windafaz" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://instagram.com/windaafz_" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="mailto:wfuziazzahra@email.com">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeModal()">×</span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
